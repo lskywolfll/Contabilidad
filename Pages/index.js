@@ -1,11 +1,9 @@
-import React, { Component, useEffect } from 'react'
-import { fetchPost } from '../store/actions/postAction';
-import { useDispatch } from 'react-redux';
+import React from 'react'
+// import { fetchPost } from '../store/actions/postAction';
+// import { connect } from 'react-redux';
+// import *
 
 // export async function getServerSideProps() {
-
-
-
 //     return {
 //         props: {
 //             data: 'algo'
@@ -15,23 +13,15 @@ import { useDispatch } from 'react-redux';
 
 function index(props) {
 
-    const dispatch = useDispatch();
-
     // useEffect(() => {
     //     dispatch(fetchPost())
     // }, [])
-
-    dispatch(fetchPost())
 
     console.log(props)
 
     return (
         <div>
             Hola!!
-
-            {/* {this.state.post !== null && (
-                this.state.post
-            )} */}
         </div>
     )
 
