@@ -3,6 +3,7 @@ import { Form, Input, Button, Checkbox } from 'antd';
 import Loading from '../Loading/Loading';
 import { connect } from 'react-redux';
 import * as usuarioActions from '../../Redux/actions/usuarioActions';
+import Router from 'next/router';
 
 const layout = {
     labelCol: { span: 8 },
@@ -14,9 +15,14 @@ const tailLayout = {
 
 class login extends Component {
 
-    onFinish = values => {
+    onFinish = async values => {
         // console.log('Success:', values);
-        this.props.Login(values)
+        try {
+            await this.props.Login(values)
+            Router.push('/Testing/testing_vars')
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     onFinishFailed = errorInfo => {

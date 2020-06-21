@@ -17,7 +17,7 @@ class LayoutPage extends Component {
                 <Content style={{ padding: '0 50px', height: '79vh' }}>
                     <div className="site-layout-content">{this.props.children}</div>
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+                <Footer style={{ textAlign: 'center' }}>©2020 Created by Sky</Footer>
             </Layout>
         );
     }
