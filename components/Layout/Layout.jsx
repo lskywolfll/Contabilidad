@@ -8,10 +8,11 @@ class LayoutPage extends Component {
             <Layout className="layout">
                 <Header>
                     <div className="logo" />
-                    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+                    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['4']}>
                         <Menu.Item key="1">Tipos De Gastos</Menu.Item>
                         <Menu.Item key="2">Remuneraciones</Menu.Item>
                         <Menu.Item key="3">Usuarios</Menu.Item>
+                        <Menu.Item key="4">Mi perfil</Menu.Item>
                     </Menu>
                 </Header>
                 <Content style={{ padding: '0 50px', height: '79vh' }}>

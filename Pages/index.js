@@ -2,7 +2,7 @@ import React from 'react'
 import Login from '../components/Login/login';
 import { Row, Col } from 'antd';
 
-// console.log(process.env.NEXT_PUBLIC_API_HOST)
+console.log(process.env.NEXT_PUBLIC_API_HOST)
 
 function index() {
 
