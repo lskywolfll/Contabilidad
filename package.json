@@ -12,6 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "antd": "^4.3.4",
+    "bootstrap": "^4.5.0",
+    "dotenv": "^8.2.0",
     "next": "^9.4.4",
     "next-redux-wrapper": "^6.0.2",
     "react": "^16.13.1",
@@ -19,7 +22,8 @@
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sweetalert2": "^9.15.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

@@ -1,27 +1,31 @@
 import React from 'react'
-// import { fetchPost } from '../store/actions/postAction';
-// import { connect } from 'react-redux';
-// import *
+import Login from '../components/Login/login';
+import { Row, Col } from 'antd';
 
-// export async function getServerSideProps() {
-//     return {
-//         props: {
-//             data: 'algo'
-//         }
-//     }
-// }
+// console.log(process.env.NEXT_PUBLIC_API_HOST)
 
-function index(props) {
+function index() {
 
     // useEffect(() => {
     //     dispatch(fetchPost())
     // }, [])
 
-    console.log(props)
-
     return (
         <div>
-            Hola!!
+            <Row className="justify-content-center">
+                <Col>
+                    <div className="pt-5">
+                        <Login />
+                    </div>
+                </Col>
+            </Row>
+            <style jsx global>
+                {`
+                    .ant-layout-header{
+                        display: none;
+                    }
+                `}
+            </style>
         </div>
     )
 
