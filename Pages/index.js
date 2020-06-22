@@ -2,8 +2,6 @@ import React from 'react'
 import Login from '../components/Login/login';
 import { Row, Col } from 'antd';
 
-console.log(process.env.NEXT_PUBLIC_API_HOST)
-
 function index() {
 
     // useEffect(() => {
@@ -11,7 +9,7 @@ function index() {
     // }, [])
 
     return (
-        <div>
+        <div >
             <Row className="justify-content-center">
                 <Col>
                     <div className="pt-5">
@@ -23,6 +21,14 @@ function index() {
                 {`
                     .ant-layout-header{
                         display: none;
+                    }
+
+                    .ant-layout-footer{
+                        height: 21vh;
+                    }
+
+                    .site-layout-content{
+                        margin: 10%;
                     }
                 `}
             </style>

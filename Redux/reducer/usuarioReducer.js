@@ -1,4 +1,4 @@
-import { ERROR_USUARIO, LOADING_USUARIO, LOGIN_USUARIO } from '../types/usuarioTypes';
+import { ERROR_USUARIO, LOADING_USUARIO, LOGIN_USUARIO, CREAR_USUARIO } from '../types/usuarioTypes';
 
 const initialState = {
     loading: false,
@@ -32,6 +32,17 @@ export const usuarioReducer = (state = initialState, { type, payload }) => {
                 error: payload,
                 loading: false
             }
+        case CREAR_USUARIO: {
+
+            const { token, usuario } = payload;
+
+            return {
+                ...state,
+                usuario: usuario,
+                token: token,
+                loading: false
+            }
+        }
         default:
             return state;
     }
