@@ -5,50 +5,8 @@ import * as usuariosActions from '../../Redux/actions/usuarioActions';
 import {
     Form,
     Input,
-    // Tooltip,
-    // Cascader,
-    // Select,
-    // Checkbox,
     Button,
-    // AutoComplete,
 } from 'antd';
-// import { QuestionCircleOutlined } from '@ant-design/icons';
-
-// const { Option } = Select;
-// const residences = [
-//     {
-//         value: 'zhejiang',
-//         label: 'Zhejiang',
-//         children: [
-//             {
-//                 value: 'hangzhou',
-//                 label: 'Hangzhou',
-//                 children: [
-//                     {
-//                         value: 'xihu',
-//                         label: 'West Lake',
-//                     },
-//                 ],
-//             },
-//         ],
-//     },
-//     {
-//         value: 'jiangsu',
-//         label: 'Jiangsu',
-//         children: [
-//             {
-//                 value: 'nanjing',
-//                 label: 'Nanjing',
-//                 children: [
-//                     {
-//                         value: 'zhonghuamen',
-//                         label: 'Zhong Hua Men',
-//                     },
-//                 ],
-//             },
-//         ],
-//     },
-// ];
 const formItemLayout = {
     labelCol: {
         xs: {
@@ -165,10 +123,6 @@ const crear = (props) => {
                 label={
                     <span>
                         Nombres
-                        {/* Nombre&nbsp; */}
-                        {/* <Tooltip title="What do you want others to call you?">
-                            <QuestionCircleOutlined />
-                        </Tooltip> */}
                     </span>
                 }
                 rules={[
@@ -187,10 +141,6 @@ const crear = (props) => {
                 label={
                     <span>
                         Apellidos
-                        {/* Nombre&nbsp; */}
-                        {/* <Tooltip title="What do you want others to call you?">
-                            <QuestionCircleOutlined />
-                        </Tooltip> */}
                     </span>
                 }
                 rules={[
